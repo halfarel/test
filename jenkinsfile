@@ -5,6 +5,7 @@ pipeline {
                      steps {
                           sh 'sudo yum install epel-release -y'
                           sh 'sudo yum install nodejs -y'
+                          sh 'sudo yum install git'
                      }
                 }
                 stage("clone"){
